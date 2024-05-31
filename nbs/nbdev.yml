@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "Cluters_espaciales"
+  site-url: "https://msalazarcgeo.github.io/Cluters_espaciales"
+  description: "Un repositorio para generar una libreria de prueba"
+  repo-branch: main
+  repo-url: "https://github.com/msalazarcgeo/Cluters_espaciales"
