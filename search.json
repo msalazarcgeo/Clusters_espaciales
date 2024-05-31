@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cluters_espaciales",
+    "section": "",
+    "text": "This file will become your README and also the index of your documentation.",
+    "crumbs": [
+      "Cluters_espaciales"
+    ]
+  },
+  {
+    "objectID": "index.html#install",
+    "href": "index.html#install",
+    "title": "Cluters_espaciales",
+    "section": "Install",
+    "text": "Install\npip install Cluters_espaciales",
+    "crumbs": [
+      "Cluters_espaciales"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "Cluters_espaciales",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\n1+1\n\n2",
+    "crumbs": [
+      "Cluters_espaciales"
+    ]
+  },
+  {
+    "objectID": "clusters_espaciales.html",
+    "href": "clusters_espaciales.html",
+    "title": "Clusters espaciales",
+    "section": "",
+    "text": "data_points\n\n data_points (n, min_x=0, min_y=0, max_x=1, max_y=1, seed=None)\n\nUna clase que contiene a los datos\nEs para mostrar como funciona\n\ndatos_simples = data_points(500, min_x = .75, min_y= .75, max_x= 1, max_y= 1 )\n\n\ndatos_simples.get_Multypoint()\n\n\n\n\n\n\n\n\n\n\n\ndata_points.get_Multypoint\n\n data_points.get_Multypoint ()\n\nRegresa un objeto MultiPoint con los puntos\n\n\n\nClusters\n\n Clusters (data_points_i, seed=1234)\n\n*Clase para generar los clusters a partir de un objeto de la clase data_points\nEsta clase se utiliza para generar los distintos tipos de clusterizaciones, se almacena los datos en una estructura de datos y se le añaden las respectivas classes*\n\ndatos_simples_3 = data_points(500, min_x = 0.6, min_y= 0.6, max_x= 1.0,\nmax_y= 1.0 )\ndatos_simples_2 = data_points(500, min_x = 0.0, min_y= 0.6, max_x= 0.4,\nmax_y= 1.0 )\ndatos_simples_1 = data_points(500, min_x = 0.6, min_y= 0.0, max_x= 1.0,\nmax_y= 0.4 )\ndatos_simples_0 = data_points(500, min_x = 0.0, min_y= 0.0, max_x= 0.4,\nmax_y= 0.4 )\n\n\ndatos_simples_0.add_points(datos_simples_1)\ndatos_simples_0.add_points(datos_simples_2)\ndatos_simples_0.add_points(datos_simples_3)\n\n\ndatos_simples_0.get_Multypoint()\n\n\n\n\n\n\n\n\n\ncluster_all = Clusters(datos_simples_0)\n\n\ncluster_all.OPTICS()\ncluster_all.HDBSCAN()\ncluster_all.DBSCAN(eps=0.1, min_samples=10)\ncluster_all.KMeans()\n\n\nfig, ax = plt.subplots(1,1, figsize=(6,6))\nplt.scatter(cluster_all.data_structure.get_X(), \n            cluster_all.data_structure.get_Y(),\n           c = cluster_all.data_structure.classes_Kmeans\n)\n\n\n\n\n\n\n\n\n\nfig, ax = plt.subplots(1,1, figsize=(6,6))\nplt.scatter(\ncluster_all.data_structure.get_X(),\ncluster_all.data_structure.get_Y(),\nc = cluster_all.data_structure.classes_DBSCAN\n)\n\n\n\n\n\n\n\n\n\nfig, ax = plt.subplots(1,1, figsize=(6,6))\nplt.scatter(\ncluster_all.data_structure.get_X(),\ncluster_all.data_structure.get_Y(),\nc = cluster_all.data_structure.classes_HDBSCAN\n)\n\n\n\n\n\n\n\n\n\nfig, ax = plt.subplots(1,1, figsize=(6,6))\nplt.scatter(\ncluster_all.data_structure.get_X(),\ncluster_all.data_structure.get_Y(),\nc = cluster_all.data_structure.classes_OPTICS)",
+    "crumbs": [
+      "Clusters espaciales"
+    ]
+  }
+]
